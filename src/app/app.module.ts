@@ -12,8 +12,18 @@ import { EmployeService } from './employe.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule, routingComponent } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AboutComponent } from './about/about.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
+  imports: [
+    HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -22,16 +32,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContentComponent,
     IfDirective,
     routingComponent,
+    AboutComponent,
+    EmployeeComponent,
+    CreateUserComponent,
+    ContactComponent,
     PageNotFoundComponent
   ],
   exports: [
     IfDirective
-  ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
   ],
   providers: [EmployeService],
   bootstrap: [AppComponent]

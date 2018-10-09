@@ -1,0 +1,12 @@
+.loginComp {
+      display: flex;
+    align-items: inherit;
+    justify-content: center;
+        height: calc(100% - 100px);
+}
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}

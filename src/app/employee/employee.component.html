@@ -1,0 +1,12 @@
+<div class="card-columns p-3">
+  <div class="card" *ngFor="let emp of employess">
+    <div class="card-body">
+      <h5 class="card-title">Employee Name : {{ emp.employee_name }}</h5>
+      <h5 class="card-title">Employee Id : {{ emp.id }}</h5>
+      <p class="card-text">Employe Salary :
+        <a href="javascript:void(0);" class="badge badge-primary">{{ emp.employee_salary | currency:'CAD' }}</a> </p>
+      <p class="card-text">Employe Age : {{ emp.employee_age }}</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
